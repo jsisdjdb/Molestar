@@ -4,69 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Página para Molestar a Amigos</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #ff5733;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-    main {
-      padding: 20px;
-    }
-    .card {
-      background-color: white;
-      border-radius: 10px;
-      margin: 20px 0;
-      padding: 20px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      text-align: center;
-    }
-    .card img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 10px;
-    }
-    .card h3 {
-      color: #ff5733;
-    }
-    .warning {
-      background-color: #ffcc00;
-      color: red;
-      padding: 10px;
-      margin-top: 20px;
-      border-radius: 5px;
-      font-weight: bold;
-      text-align: center;
-    }
-    .hidden-content {
-      display: none;
-      background-color: #f0f0f0;
-      padding: 10px;
-      border-radius: 5px;
-    }
-    button {
-      background-color: #ff5733;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 16px;
-      margin-top: 10px;
-    }
-    button:hover {
-      background-color: #c13c1e;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
@@ -86,7 +24,7 @@
     </div>
 
     <div class="card">
-  <img src="Espanta Viejas.jpg" alt="Espanta Vieja">
+      <img src="Espanta Viejas.jpg" alt="Espanta Vieja">
       <h3>El Espanta Vieja</h3>
       <p>¿alguna vez has visto un espantavieja?</p>
       <button onclick="toggleContent(1)">Ver más</button>
@@ -116,7 +54,7 @@
     </div>
 
     <div class="card">
-      <img src="gay.jpg"alt="Gay">
+      <img src="gay.jpg" alt="Gay">
       <h3>El Gay</h3>
       <p>¿Oye, nunca habías notado su forma de mirar a los chicos?</p>
       <button onclick="toggleContent(4)">Ver más</button>
@@ -130,11 +68,6 @@
     </div>
   </main>
 
-  <script>
-    function toggleContent(index) {
-      const content = document.getElementById('content-' + index);
-      content.style.display = content.style.display === 'none' ? 'block' : 'none';
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
