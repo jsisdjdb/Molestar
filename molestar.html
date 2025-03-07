@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página para Molestar a Amigos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #ff5733;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    main {
+      padding: 20px;
+    }
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      margin: 20px 0;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .card img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+    .card h3 {
+      color: #ff5733;
+    }
+    .warning {
+      background-color: #ffcc00;
+      color: red;
+      padding: 10px;
+      margin-top: 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .hidden-content {
+      display: none;
+      background-color: #f0f0f0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #ff5733;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+    button:hover {
+      background-color: #c13c1e;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>No SÉ hacer qué</h1>
+    <p>Si los ves, no sé qué hacer qué...</p>
+  </header>
+  
+  <main>
+    <div class="card">
+      <img src="cuernudo.jpg" alt="Cuernudo">
+      <h3>El Cuernudo</h3>
+      <p>El que siempre parece tener problemas sentimentales... ¿verdad?</p>
+      <button onclick="toggleContent(0)">Ver más</button>
+      <div class="hidden-content" id="content-0">
+        <p>Un cuernudo es alguien que siempre está metido en líos amorosos, y nunca parece aprender de sus errores. ¡Cuidado!</p>
+      </div>
+    </div>
+
+    <div class="card">
+  <img src="Espanta Viejas.jpg" alt="Espanta Vieja">
+      <h3>El Espanta Vieja</h3>
+      <p>¿alguna vez has visto un espantavieja?</p>
+      <button onclick="toggleContent(1)">Ver más</button>
+      <div class="hidden-content" id="content-1">
+        <p>Este tipo es el que siempre está coqueteando con mujeres mayores, y luego se escapa rápido si le preguntan algo más serio.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/150" alt="Virgen Otaku">
+      <h3>El Virgen Otaku</h3>
+      <p>¿Pasas más tiempo viendo anime que en la vida real?</p>
+      <button onclick="toggleContent(2)">Ver más</button>
+      <div class="hidden-content" id="content-2">
+        <p>Un virgen otaku, siempre hablando de sus personajes favoritos y su amor imposible. ¡Ojo con este!</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/150" alt="Mete Mano">
+      <h3>El Mete Mano</h3>
+      <p>¿Sabes quién siempre está demasiado cerca para tu comodidad?</p>
+      <button onclick="toggleContent(3)">Ver más</button>
+      <div class="hidden-content" id="content-3">
+        <p>Este tipo no puede resistir tocar a los demás. Siempre se mete en tu espacio personal... ¡Alerta máxima!</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="gay.jpg"alt="Gay">
+      <h3>El Gay</h3>
+      <p>¿Oye, nunca habías notado su forma de mirar a los chicos?</p>
+      <button onclick="toggleContent(4)">Ver más</button>
+      <div class="hidden-content" id="content-4">
+        <p>A veces el gay no es tan obvio... ¡Pero hay señales que no puedes ignorar!</p>
+      </div>
+    </div>
+
+    <div class="warning">
+      <p><strong>¡Advertencia!</strong> Esta página es solo para molestar. No tomes nada en serio. ¡Recuerda ser un buen amigo!</p>
+    </div>
+  </main>
+
+  <script>
+    function toggleContent(index) {
+      const content = document.getElementById('content-' + index);
+      content.style.display = content.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
+</body>
+</html>
